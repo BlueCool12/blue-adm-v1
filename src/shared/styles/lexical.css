@@ -1,0 +1,123 @@
+.lexical-theme {
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  color: var(--mui-palette-text-primary);
+  caret-color: var(--mui-palette-text-primary);
+  line-height: 1.6;
+}
+
+/* 1. 제목 (Headings) */
+.lexical-theme .editor-h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 2.5rem 0 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.lexical-theme .editor-h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--mui-palette-divider);
+}
+
+.lexical-theme .editor-h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 1.5rem 0 0.75rem;
+}
+
+/* 2. 본문 및 텍스트 */
+.lexical-theme .editor-paragraph {
+  margin-bottom: 1em;
+}
+
+.lexical-theme .editor-quote {
+  margin: 1.5em 0;
+  padding: 0.8em 1.2em;
+  border-left: 4px solid var(--mui-palette-primary-main);
+  background-color: var(--mui-palette-action-hover);
+  font-style: italic;
+  border-radius: 0 4px 4px 0;
+}
+
+/* 3. 목록 (List) */
+.lexical-theme .editor-list-ul,
+.lexical-theme .editor-list-ol {
+  margin: 0 0 1em 1.5em;
+  padding: 0;
+}
+
+.lexical-theme .editor-listitem {
+  margin: 0.3em 0;
+}
+
+/* 4. 코드 블록 (Code Block) */
+.lexical-theme .editor-code {
+  background-color: #272c34 !important;
+  color: #eff1f5 !important;
+  padding: 1.2em !important;
+  font-family: 'Fira Code', Consolas, monospace;
+
+  display: block;
+  white-space: pre;
+  overflow-x: auto;
+
+  line-height: 1.5;
+  margin: 1.5em 0;
+  border-radius: 8px !important;
+}
+
+.lexical-theme .editor-token-keyword {
+  color: #c678dd;
+  /* 보라색 (if, const, export 등) */
+  font-weight: bold;
+}
+
+.lexical-theme .editor-token-function {
+  color: #61afef;
+  /* 파란색 (함수명) */
+}
+
+.lexical-theme .editor-token-string {
+  color: #98c379;
+  /* 초록색 (문자열) */
+}
+
+.lexical-theme .editor-token-boolean,
+.lexical-theme .editor-token-number {
+  color: #d19a66;
+  /* 주황색 (true, false, 숫자) */
+}
+
+.lexical-theme .editor-token-operator,
+.lexical-theme .editor-token-punctuation {
+  color: #abb2bf;
+  /* 연회색 (괄호, 마침표, 연산자) */
+}
+
+.lexical-theme .editor-token-class,
+.lexical-theme .editor-token-builtin,
+.lexical-theme .editor-token-type {
+  color: #e5c07b;
+  /* 노란색 (클래스명, 기본 객체) */
+}
+
+.lexical-theme .editor-token-attr {
+  color: #d19a66;
+  /* 속성 이름 */
+}
+
+.lexical-theme .editor-token-char {
+  color: #56b6c2;
+  /* 청록색 */
+}
+
+.lexical-theme .editor-token-comment {
+  color: #5c6370;
+  /* 회색 (주석) */
+  font-style: italic;
+}
