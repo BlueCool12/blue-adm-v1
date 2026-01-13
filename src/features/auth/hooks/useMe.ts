@@ -1,0 +1,20 @@
+import { useQuery } from "@tanstack/react-query";
+import { authKeys } from "./authKeys";
+import { http } from "@/api/http";
+import type { User } from "../types/user";
+import { getAccessToken } from "../utils/storage";
+
+export function useMe() {
+  const token = getAccessToken();
+
+  return useQuery({
+    queryKey: authKeys.me(),
+    queryFn: async () => {
+      const { data } = await http.get<User>('/auth/me');
+      return data;
+    },
+    enabled: token !== null,
+    retry: false,
+    staleTime: Infinity,
+  });
+}
