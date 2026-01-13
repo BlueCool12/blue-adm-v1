@@ -4,8 +4,8 @@ import { router } from '@/app/routes';
 import { CssBaseline, InitColorSchemeScript } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from '@/shared/theme';
-import '@/styles/lexical.css';
-import '@/styles/globals.css';
+import '@/shared/styles/lexical.css';
+import '@/shared/styles/globals.css';
 
 import { queryClient } from '@/shared/api/queryClient';
 import { QueryClientProvider } from '@tanstack/react-query';
