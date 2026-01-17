@@ -15,6 +15,6 @@ export function useMe() {
     },
     enabled: token !== null,
     retry: false,
-    staleTime: Infinity,
+    staleTime: 1000 * 60 * 60,
   });
 }

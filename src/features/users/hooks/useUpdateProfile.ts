@@ -31,7 +31,10 @@ export function useUpdateProfile() {
       return http.patch('/users/me/profile', data);
     },
     onSuccess: () => {
-      qc.invalidateQueries({ queryKey: [authKeys.me] });
+      qc.invalidateQueries({
+        queryKey: authKeys.me(),
+        refetchType: 'all'
+      });
       showAlert('프로필이 정상적으로 수정되었습니다.', 'success');
     },
     onError: (error: AxiosError<NestErrorResponse>) => {
