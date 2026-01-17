@@ -66,7 +66,7 @@ export default function DashboardPage() {
                                         sx: { display: 'none' }
                                     }
                                 }}
-                                margin={{ left: 40, right: 20, top: 20, bottom: 20 }}
+                                margin={{ left: 0, right: 15, top: 20, bottom: 20 }}
                             />
                         </Box>
                     </Paper>

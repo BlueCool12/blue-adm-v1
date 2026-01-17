@@ -4,7 +4,7 @@ import { RequireAuth, RequireGuest } from "@/app/routes/guards";
 import { RootLayout } from "@/app/layouts/RootLayout";
 import { Loading } from "@/shared/components/Loading";
 
-const Login = lazy(() => import("@/features/auth/pages/Login"));
+const LoginPage = lazy(() => import("@/features/auth/pages/LoginPage"));
 const DashboardPage = lazy(() => import("@/features/dashboard/pages/DashboardPage"));
 const PostListPage = lazy(() => import("@/features/posts/pages/PostListPage"));
 const PostEditPage = lazy(() => import("@/features/posts/pages/PostEditPage"));
@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
         <RequireGuest />
       </Suspense>
     ),
-    children: [{ path: '/login', element: <Login /> }]
+    children: [{ path: '/login', element: <LoginPage /> }]
   },
 
   // 인증
